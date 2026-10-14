@@ -1,12 +1,10 @@
 :root {
-  --bg-color: #f9efe8;
-  --primary-color: #917681;
-  --secondary-color: #b5838d;
-  --text-color: #ec9f9d;
-  --accent-color: #ffb4a2;
+  --bg-color: #ffffff;
+  --primary-color: #24A98B;
+  --secondary-color: #7fc4b5;
   --header-font: "Coiny", sans-serif;
   --text-font: "Cause", sans-serif;
-  --card-bg: #fffaf6;
+  --card-bg: #EAFBF7;
   --ink-color: #354541;
   --content-width: 68rem;
 }
@@ -34,9 +32,8 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem 2.5rem;
-  padding: 0.8rem max(1rem, calc((100vw - var(--content-width)) / 2));
+  padding: 0.8rem;
   background-color: var(--bg-color);
-  border-bottom: 2px solid var(--secondary-color);
 }
 
 h1,
@@ -54,6 +51,16 @@ h1 {
   font-size: clamp(2rem, 5vw, 2.8rem);
 }
 
+.logo a{
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.logo a:hover{
+    color: var(--secondary-color);
+}
+
 h2 {
   margin-bottom: 1.5rem;
   color: var(--primary-color);
@@ -67,7 +74,7 @@ h4 {
 
 h4 {
   margin: 2rem 0 1rem;
-  color: var(--text-color);
+  color: var(--secondary-color);
   font-size: 1.4rem;
 }
 
@@ -91,8 +98,8 @@ nav a {
   font-weight: 700;
   text-decoration: none;
   transition:
-    background-color 160ms ease,
-    color 160ms ease;
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 nav a:hover,
@@ -109,10 +116,8 @@ main {
 .main-section {
   margin-bottom: 2rem;
   padding: clamp(1.25rem, 4vw, 2.5rem);
-  border: 1px solid var(--secondary-color);
   border-radius: 1.25rem;
   background-color: var(--card-bg);
-  box-shadow: 0 0.5rem 1.5rem rgb(72 52 43 / 7%);
   scroll-margin-top: 6rem;
 }
 
@@ -139,7 +144,7 @@ img {
   background-color: var(--card-bg);
   box-shadow: 0 0.5rem 1.25rem rgb(72 52 43 / 12%);
   transition:
-    transform 180ms ease,
+    transform 300ms ease,
     box-shadow 180ms ease;
 }
 
@@ -180,7 +185,7 @@ img:hover {
   text-transform: capitalize;
 }
 
-#contact p + p {
+#contact p {
   margin-top: 0.5rem;
 }
 
@@ -189,15 +194,15 @@ img:hover {
 }
 
 a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-underline-offset: 0.2em;
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
-#contact > a[title] {
+#contact a[title] {
   display: inline-grid;
   width: 2.5rem;
   height: 2.5rem;
@@ -208,9 +213,10 @@ a:hover {
   color: var(--ink-color);
   font-size: 1.2rem;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-#contact > a[title]:hover {
+#contact a[title]:hover {
   background-color: var(--accent-color);
 }
 
@@ -240,15 +246,6 @@ a:hover {
   transform: scale(1.05);
 }
 
-
-.work-experience-item,
-.experience-item,
-.project-item {
-  padding: 1.25rem;
-  border-left: 4px solid var(--secondary-color);
-  border-radius: 0 0.8rem 0.8rem 0;
-  background-color: var(--bg-color);
-}
 
 .work-experience-item h5,
 .experience-item h3,
@@ -299,7 +296,7 @@ footer {
   display: flex;
   text-align: center;
   flex-direction: column;
-  border-top: 4px solid var(--secondary-color);
+  margin: 10px;
 }
 
 @media (max-width: 40rem) {
