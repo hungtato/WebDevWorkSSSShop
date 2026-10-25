@@ -2,9 +2,9 @@
 ## welcome to the world of web dev 😍
 
 Websites are often built using 3 languages:
-- HTML (the structure of the website)
-- CSS (the design and layout of the website)
-- JavaScript (the "brains" of the website)
+- **HTML** (the structure of the website)
+- **CSS** (the design and layout of the website)
+- **JavaScript** (the "brains" of the website)
     
 
 For example, on YouTube:
@@ -14,9 +14,17 @@ For example, on YouTube:
     
 In this workshop, we'll be going through the basics of HTML and CSS!
 
+### How to use this template!
+1. Download the files as a ZIP file or clone the repository to your computer.
+2. Edit the HTML and CSS files to personalize your website with your own content, colors, fonts, and layout.
+   - Update all the relevant links and images in the HTML to point to your own websites, social media profiles, and image files.
+   - Replace the placeholder text and images with your own content.
+3. Open *index.html* in your browser to preview your changes as you work!
+   - use the `Live Preview` or `Live Server` extensions on VSCode to help you view your website while you work
+
 ### HTML (HyperText Markup Language)
 
-Anatomy of a Tag
+**Anatomy of a Tag**
 
 ```
 <h1 class="title">Hello World!</h1>
@@ -28,7 +36,7 @@ Anatomy of a Tag
 - closing tag → `</h1>` (marks the end of the heading element)
     
 
-Page Skeleton
+**Page Skeleton**
 
 ```html
 <!DOCTYPE html>
@@ -79,9 +87,9 @@ Every HTML element can be thought of as a box. The CSS box model d
 - Margin → the space outside the border, separating the element from other elements.
     
 
-![[Pasted image 20261023132927.png]]
+![box-model](box-model.png)
 
-Changing Font
+*Changing Fonts*
 
 1. Choose a font from [Google Fonts](https://fonts.google.com/?utm_source=chatgpt.com).
 2. Select the font style you want to use and copy the HTML `<link>` code from the font's page.
@@ -89,14 +97,15 @@ Changing Font
 4. Use the font's name in your CSS with the `font-family` property.
     
 
+
 Example:
 
 Add this inside your HTML `<head>`:
 
-```
+```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
+<link href="https://fonts.googleapis.com/css2family=Robotodisplay=swap" rel="stylesheet">
 ```
 
 Then use the font in your CSS:
@@ -107,7 +116,7 @@ body {
 }
 ```
 
-Color Palettes
+**Color Palettes**
 
 - Use [Coolors](https://coolors.co/?utm_source=chatgpt.com) to find color palettes that work well together.
 - Copy the hex codes for the colors you want to use (for example, `#24a98b`).
@@ -116,7 +125,7 @@ Color Palettes
 
 Example:
 
-```
+```css
 :root {
     --primary-color: #24a98b;
     --background-color: #f5f5f5;
@@ -138,3 +147,11 @@ body {
 - `var(--primary-color)` → uses the color stored in that variable.
 
 If you want to try a different color palette later, you can simply change the values in `:root` instead of updating every CSS rule individually.
+
+
+## Things to look into after the workshop!!
+- **Favicons** → add a small icon that appears in the browser tab next to your website's title.
+- **Changing up the style of your website!** → experiment with different fonts, colors, layouts, animations, and hover effects to add your own style to the website!
+- **Adding more pages**→ create additional *separate* pages for things like an About Me section, projects, hobbies, or a contact page, and link them together using navigation links.
+- **Adding a light or dark mode** → let users switch between light and dark themes.
+- **Deploying your website** → publish your website online so other people can visit it using a link!
