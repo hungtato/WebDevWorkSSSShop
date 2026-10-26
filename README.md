@@ -96,9 +96,11 @@ h1 {
 }
 ```
 
-- selector → `h1` (selects all `<h1>` elements on the page)
-- property → `color` (specifies what we want to change)
-- value → `#24a98b` (sets the text color to a shade of green)
+|Term|Part|Explanation  |
+|----|----|-------------|
+|selector |`h1`      |selects all `<h1>` elements on the page|
+|property |`color`   |specifies what property we want to change|
+|value    |`#24a98b` |sets the text color to a shade of green|
 
 #### More into selectors
 
@@ -130,6 +132,7 @@ h1 {
 > ```html
 > <h1 class="class-1 class-2 class-3">SSSSo many classsses! - Seb</h1>
 > ```
+
 ---
 
 As you go through and edit `index.html`, you may notice HTML attributes named `id`, these are kind of similar to classes,
@@ -156,6 +159,15 @@ For example:
     background-color: #303030;
 }
 ```
+
+---
+
+Believe it or not, you can be *even more specific*, for example:
+
+- `p.main`
+    - Only apply to `<p>` elements that have the `main` class
+- `article.project-item > h3`
+    - Only apply to `<h3>` elements that are nested inside the `<article>` element that has the `project-item` class
 
 #### The Box Model
 
