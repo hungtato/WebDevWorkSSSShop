@@ -52,6 +52,27 @@ There are a lot of different elements, here are some of the basic ones:
 - `<strong></strong>`: These make the content inside **bold**
 - `<div></div>`: These don't do much alone, but they become very useful when you combine them with CSS
 
+- Lists
+    - `<ul></ul>` - **U**nordered **L**ist element (Bullet point)
+    - `<ol></ol>` - **O**rdered **L**ist element (Numbered)
+    - `<li></li>`: List item element, you have to nest these inside either of the two list elements above, see below for a demo
+
+```html
+<!-- Bullet point list of Seb's Groceries -->
+<h1>Seb's Grocery List</h1>
+<ul>
+  <li>SSSSalad</li>
+  <li>Dressssing</li>
+  <li>SSSStrawberry</li>
+</ul>
+```
+
+- Images
+    - TODO
+    - `<img/>` is an exception to the opening/closing tag thing
+
+- TODO: Explain article, main, nav, footer briefly (all show up in `index.html`)
+
 Just like any other programming language, HTML also have comments:
 
 ```html
@@ -85,6 +106,12 @@ Just like any other programming language, HTML also have comments:
 > [!NOTE]  
 > The browser reads the HTML to figure out what content to display and how the elements are organized.
     
+
+#### Nesting Elements
+
+- TODO: Show how you can nest elements
+    - Show an example of `<article class="work-experience-item">` for example
+    - Show how you can link images by nesting `<a>` and `<img>`
 
 ### CSS (Cascading Style Sheets)
 
@@ -178,7 +205,11 @@ Every HTML element can be thought of as a box. The CSS box model d
 - Border → the outline around the element.
 - Margin → the space outside the border, separating the element from other elements.
     
-![box-model](box-model.png)
+![Nested boxes, from outermost to innermost; margin, border, padding, content](box-model.png)
+
+#### TODO:
+
+Explain
 
 #### Changing Fonts
 
